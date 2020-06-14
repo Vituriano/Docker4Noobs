@@ -1,0 +1,10 @@
+version: '3'
+services:
+  server:
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    image: vituriano/docker4noobs
+    container_name: server
+    ports:
+      - "3001:3000"
